@@ -1,0 +1,122 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
+html, body{
+    color:#fff;
+    font-size: 62.5%;
+    font-weight: normal;
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, rgba(6,6,6,1) 35%);
+
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+}
+a{
+    text-decoration: none;
+    color: inherit;
+}
+button, input{
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+h1, h2, h3, h4, h5, h6{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    width: 130rem;
+    margin: 0 auto;
+}
+button {
+    border-radius: 5rem;
+    padding: 1rem 3rem;
+    color: #fff;
+}
+.main-display__background{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+.main-display{
+    padding-top: 27rem;
+}
+.main-display .container{
+    position: relative;
+    z-index: 10;
+}
+.header{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 100%;
+    padding: 4rem 11rem  4rem 8rem;
+    z-index: 11;
+}
+.header__wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.header__menu{
+    display: flex;
+    align-items: center;
+
+}
+.header__nav a:not(:last-child) {
+    margin-right: 7.1rem;
+    font-size: 1.6rem;
+}
+.header__nav a {
+    font-size: 1.6rem;
+}
+.header__logo{
+    display: block;
+    width: 4rem;
+    height: 4rem;
+}
+.header__button{
+    margin-left: 55.3rem;
+    background-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 98.23%);
+    font-size: 1.6rem;
+}
+.main-display__title{
+    max-width: 76rem;
+    font-size: 6.4rem;
+    margin-bottom: 5rem;
+}
+.main-display__timer{
+    display: flex;
+    margin-bottom: 7.6rem;
+}
+.main-display__button{
+    font-size: 1.6rem;
+    background-image: linear-gradient(94.78deg, #DF5950 11.19%, #451046 93.72%);
+    background-image: linear-gradient(94.26deg, #C89AFC 9.51%, #7C6AFA 98.23%);
+}
+.timer__item{
+    width: 10.2rem;
+    height: 11.2rem;
+    background-color: #121212;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.timer__item:not(:last-child){
+    margin-right: 3rem;
+}
+.timer__count{
+    font-size: 3.6rem;
+}
+.timer__text{
+    font-size: 1.6rem;
+    opacity: 0.4;
+
+}
