@@ -22,7 +22,7 @@
                     <a href="#">Процесс работы</a>
                     <a href="#">Команда</a>
                 </nav>
-                <button class="button header__button"  type="button">оставить заявку</button>
+                <button class="button header__button modal__button"  type="button">оставить заявку</button>
             </div>
         </div>
     </header>
@@ -65,7 +65,7 @@
                     
                     </div>
                 </div>
-                <button type="button" class="button main-display__button">оставить заявку</button>
+                <button type="button" class="button main-display__button modal__button">оставить заявку</button>
             </div>
             <div class="main-display__background">
                 <img src="img/main-screen__bgc.png" alt="header-background">
@@ -178,7 +178,7 @@
                     <div class="assembly__description">
                         Мы свяжемся  с вами,  чтобы уточнить детали заказа
                     </div>
-                    <butoon class="button assembly__button"> Оставить заявку</butoon>
+                    <button class="button assembly__button modal__button"> Оставить заявку</button>
                     <div class="assembly__socials">
                         <div class="assembly__item">
                             <img src="img/vk.png" alt="vk">
@@ -196,6 +196,30 @@
                 </div>
             </div>
         </section>
+        <form action="#" class="modal block-center">
+            <div class="modal__inner">
+                <div class="modal__close">
+                    <img src="img/cross.svg" alt="cross">
+                </div>
+                <h3 class="modal__header">Заявка на сборку</h3>
+                <div class="modal__subheader">Мы свяжемся  с вами,  чтобы обсудить детали заказа</div>
+                <div class="modal__elements">
+                    <div class="modal__item">
+                        <input type="text" class="modal__input" placeholder="Как вас зовут">
+                    </div>
+                    <div class="modal__item">
+                        <input type="tel" class="modal__input"placeholder="Номер телефона">
+                    </div>
+                    <div class="modal__item">
+                        <input type="email" class="modal__input"placeholder="E-mail">
+                    </div>
+
+                </div>
+                <button class="button main-display__button modal__button" type="submit">Отправить</button>
+            </div>
+
+        </form>
     </main>
+    <script src="js/main.js"></script>
 </body>
 </html>
